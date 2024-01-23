@@ -178,8 +178,7 @@ def play_again():
     pygame.draw.rect(SCREEN, "white", (10, 600, 1000, 600))
     play_again_font = pygame.font.Font("assets/FreeSansBold.otf", 40)
     play_again_text = play_again_font.render("Press ENTER to Play Again!", True, "black")
-    play_again_rect = play_again_text
-.get_rect(center=(WIDTH / 2, 700))
+    play_again_rect = play_again_text.get_rect(center=(WIDTH / 2, 700))
     word_was_text = play_again_font.render(f"The word was {CORRECT_WORD}!", True, "black")
     word_was_rect = word_was_text.get_rect(center=(WIDTH / 2, 650))
     SCREEN.blit(word_was_text, word_was_rect)
